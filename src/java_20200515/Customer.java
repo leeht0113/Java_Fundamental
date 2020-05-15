@@ -1,0 +1,12 @@
+package java_20200515;
+//Customer 클래스
+public class Customer {
+	//클래스의 멤버 변수 - instance 변수, static 변수, final 변수
+	//인스턴스 변수 (name, email, phone, balance, isReleased)
+	public String name;
+	public String email;
+	public String phone;
+	public double balance;
+	public boolean isReleased;
+	
+}
