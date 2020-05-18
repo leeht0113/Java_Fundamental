@@ -2,53 +2,48 @@ package java_20200514;
 
 public class ArrayDemo {
 	public static void main(String[] args) {
-		//1. ¹è¿­ ¼±¾ğ ¹× »ı¼º
+		// 1. ë°°ì—´ ì„ ì–¸ ë° ìƒì„±
 		int[] a = new int[4];
-				
-		//2. ¹è¿­ ÇÒ´ç
+
+		// 2. ë°°ì—´ í• ë‹¹
 		a[0] = 1;
 		a[1] = 2;
 		a[2] = 3;
 		a[3] = 4;
-		
-		
-		//3. ¹è¿­ Ãâ·Â
-		//a.length : ¹è¿­ÀÇ ±æÀÌ
-		//½ÇÇà : ctrl + f11
-		for(int i=0 ; i<a.length;i++) {
+
+		// 3. ë°°ì—´ ì¶œë ¥
+		// a.length : ë°°ì—´ì˜ ê¸¸ì´
+		// ì‹¤í–‰ : ctrl + f11
+		for (int i = 0; i < a.length; i++) {
 			System.out.println(a[i]);
 		}
-		//¹è¿­ ¼±¾ğ, »ı¼º, ÇÒ´çÀ» µ¿½Ã¿¡ ÀÌ·ç¾îÁü
-		int[] b = {100,200,300,400,500};
-		
-		//¹è¿­ÀÇ °ª º¯°æ(ÇÒ´ç)
+		// ë°°ì—´ ì„ ì–¸, ìƒì„±, í• ë‹¹ì„ ë™ì‹œì— ì´ë£¨ì–´ì§
+		int[] b = { 100, 200, 300, 400, 500 };
+
+		// ë°°ì—´ì˜ ê°’ ë³€ê²½(í• ë‹¹)
 		b[0] = 101;
 		b[1] = 201;
 		b[2] = 301;
 		b[3] = 401;
 		b[4] = 501;
-		
-		//¹è¿­ Ãâ·Â => for loop
-		for(int i=0;i<b.length;i++) {
+
+		// ë°°ì—´ ì¶œë ¥ => for loop
+		for (int i = 0; i < b.length; i++) {
 			System.out.println(b[i]);
 		}
-		
-		//¹è¿­ Ãâ·Â => enhanced for loop
-		
-		for(int value : b) {
+
+		// ë°°ì—´ ì¶œë ¥ => enhanced for loop
+
+		for (int value : b) {
 			System.out.println(value);
 		}
-		
+
 		int[] c = a;
 		c[0] = 11;
-		
+
 		System.out.println(a[0]);
 		System.out.println(c[0]);
-		
-		
-		
-		
+
 	}
-	
-	
+
 }

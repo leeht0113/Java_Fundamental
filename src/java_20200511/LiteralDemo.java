@@ -2,37 +2,36 @@ package java_20200511;
 
 public class LiteralDemo {
 	public static void main(String[] args) {
-		//byte ¹üÀ§ (-128 ~127)¸¦ ³Ñ¾î°¡¸é overflow ¹ß»ı => compile error
-		byte b1 = 128;
-		
-		int a1 = 128;//10Áø¼ö Ç¥±â¹ı
-		int a2 = 076;//8Áø¼ö Ç¥±â¹ı
-		int a3 = 0x123;//16Áø¼ö Ç¥±â¹ı
-		int a4 = 0b1010;//2Áø¼ö Ç¥±â¹ı
-		
+		// byte ë²”ìœ„ (-128 ~127)ë¥¼ ë„˜ì–´ê°€ë©´ overflow ë°œìƒ => compile error
+		//byte b1 = 128;
+
+		int a1 = 128;// 10ì§„ìˆ˜ í‘œê¸°ë²•
+		int a2 = 076;// 8ì§„ìˆ˜ í‘œê¸°ë²•
+		int a3 = 0x123;// 16ì§„ìˆ˜ í‘œê¸°ë²•
+		int a4 = 0b1010;// 2ì§„ìˆ˜ í‘œê¸°ë²•
+
 		System.out.println(a1);
 		System.out.println(a2);
 		System.out.println(a3);
 		System.out.println(a4);
-		
-		//long ¸®ÅÍ·²Àº ¼ıÀÚµÚ¿¡ 1 ¶Ç´Â L·Î Ç¥±â
+
+		// long ë¦¬í„°ëŸ´ì€ ìˆ«ìë’¤ì— 1 ë˜ëŠ” Lë¡œ í‘œê¸°
 		long l1 = 12;
-		
-		//float ¸®ÅÍ·²Àº ¼ıÀÚµÚ¿¡ f ¶Ç´Â F·Î Ç¥±â
+
+		// float ë¦¬í„°ëŸ´ì€ ìˆ«ìë’¤ì— f ë˜ëŠ” Fë¡œ í‘œê¸°
 		float f1 = 123.4f;
-		
-		//double ¸®ÅÍ·²Àº ¼ıÀÚµÚ¿¡ d ¶Ç´Â D·Î Ç¥±â, »ı·«°¡´É
+
+		// double ë¦¬í„°ëŸ´ì€ ìˆ«ìë’¤ì— d ë˜ëŠ” Dë¡œ í‘œê¸°, ìƒëµê°€ëŠ¥
 		double d1 = 123.36;
-		
-		//boolean ¸®ÅÍ·²Àº true ¶Ç´Â false;
+
+		// boolean ë¦¬í„°ëŸ´ì€ true ë˜ëŠ” false;
 		boolean isExisted = false;
-		
+
 		byte b1 = 10;
 		byte b2 = 20;
-		byte b3 = (byte)(b1 + b2);
-		
+		byte b3 = (byte) (b1 + b2);
+
 		System.out.println(b3);
-		
-		
+
 	}
 }

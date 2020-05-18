@@ -2,15 +2,15 @@ package java_20200512;
 
 public class CastingDemo {
 	public static void main(String[] args) {
-		//byte ¹üÀ§¸¦ ³Ñ¾î°¡¸é ¿¡·¯ ¹ß»ı
-		//Çüº¯È¯À» ÇÏ¸é  ¿¡·¯°¡ ¹ß»ıÇÏÁö ¾Ê°í, circuit ¹ß»ı
-		byte a = (byte)128;
-		System .out.println(a);
+		// byte ë²”ìœ„ë¥¼ ë„˜ì–´ê°€ë©´ ì—ëŸ¬ ë°œìƒ
+		// í˜•ë³€í™˜ì„ í•˜ë©´ ì—ëŸ¬ê°€ ë°œìƒí•˜ì§€ ì•Šê³ , circuit ë°œìƒ
+		byte a = (byte) 128;
+		System.out.println(a);
 
-		//float, double °ªÀ» Á¤¼öÇüÀ¸·Î Ä³½ºÆÃÇÏ¸é ¼Ò¼öÁ¡ ÀÌÇÏ°¡ Àß¸² (cut)
-		//cut ¹ß»ı 
-		int b  = (int)42.5;
+		// float, double ê°’ì„ ì •ìˆ˜í˜•ìœ¼ë¡œ ìºìŠ¤íŒ…í•˜ë©´ ì†Œìˆ˜ì  ì´í•˜ê°€ ì˜ë¦¼ (cut)
+		// cut ë°œìƒ
+		int b = (int) 42.5;
 		System.out.println(b);
 	}
-	
+
 }

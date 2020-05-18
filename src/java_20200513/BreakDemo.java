@@ -8,7 +8,7 @@ public class BreakDemo {
 			sum += i;
 			
 		}
-		System.out.printf("1ºÎÅÍ 5±îÁö ÇÕÀº %d ÀÔ´Ï´Ù, %n", sum);
+		System.out.printf("1ë¶€í„° 5ê¹Œì§€ í•©ì€ %d ì…ë‹ˆë‹¤, %n", sum);
 		
 		outter: for (int i =2; i <=9; i++) {
 			for (int j=1 ; j<=9; j++) {
@@ -17,4 +17,5 @@ public class BreakDemo {
 			}
 		}
 	}
+
 }

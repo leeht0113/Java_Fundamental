@@ -2,29 +2,28 @@ package java_20200514;
 
 public class TwoArray {
 	public static void main(String[] args) {
-		
-		//¹è¿­ ¼±¾ğ ¹× »ı¼º
+
+		// ë°°ì—´ ì„ ì–¸ ë° ìƒì„±
 		int[][] a = new int[3][2];
-		
-		//¹è¿­ ÇÒ´ç
+
+		// ë°°ì—´ í• ë‹¹
 		a[0][0] = 10;
 		a[0][1] = 20;
 		a[1][0] = 30;
 		a[1][1] = 40;
 		a[2][0] = 50;
 		a[2][1] = 60;
-		
-		
-		//¹è¿­ ¼±¾ğ ¹× »ı¼º°ú ÇÒ´ç
-		int[][] b= {{10,20},{30,40},{50,60}};
-		
-		//¹è¿­ Ãâ·Â
-		
-		for(int i=0; i<a.length;i++) {
-			for(int j=0;j<a[i].length;j++) {
+
+		// ë°°ì—´ ì„ ì–¸ ë° ìƒì„±ê³¼ í• ë‹¹
+		int[][] b = { { 10, 20 }, { 30, 40 }, { 50, 60 } };
+
+		// ë°°ì—´ ì¶œë ¥
+
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a[i].length; j++) {
 				System.out.println(a[i][j]);
 			}
 		}
-		
+
 	}
 }

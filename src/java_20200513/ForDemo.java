@@ -3,34 +3,34 @@ package java_20200513;
 public class ForDemo {
 	public static void main(String[] args) {
 		int sum = 0;
-		for(int i=1 ;i<=10;i++) {
-			//sum = sum +i;
+		for (int i = 1; i <= 10; i++) {
+			// sum = sum +i;
 			sum += i;
 		}
-		System.out.printf("1ºÎÅÍ 10±îÁö ÇÕÀº %d ÀÔ´Ï´Ù.", sum);
-		
-		for (int i = 1; i<=10; i++) {
-			if (i%2 == 0) {
+		System.out.printf("1ë¶€í„° 10ê¹Œì§€ í•©ì€ %d ìž…ë‹ˆë‹¤.", sum);
+
+		for (int i = 1; i <= 10; i++) {
+			if (i % 2 == 0) {
 				sum += i;
-			} 
+			}
 		}
-		System.out.printf("1ºÎÅÍ 10±îÁö Â¦¼ö ÇÕÀº %d ÀÔ´Ï´Ù.%n", sum);
-		
+		System.out.printf("1ë¶€í„° 10ê¹Œì§€ ì§ìˆ˜ í•©ì€ %d ìž…ë‹ˆë‹¤.%n", sum);
+
 		for (int i = 2; i <= 9; i++) {
 			for (int j = 1; j <= 9; j++) {
-				System.out.printf("%d * %d = %d%n", i,j,i*j);
+				System.out.printf("%d * %d = %d%n", i, j, i * j);
 			}
 		}
-	
-		//9,8,7,,,2´Ü±îÁö
-		
+
+		// 9,8,7,,,2ë‹¨ê¹Œì§€
+
 		for (int i = 9; i >= 2; i--) {
 			for (int j = 1; j <= 9; j++) {
-				System.out.printf("%d * %d = %d%n", i,j,i*j);
-				
+				System.out.printf("%d * %d = %d%n", i, j, i * j);
+
 			}
 		}
-		
+
 		/*
 		 * 
 		 **
@@ -39,19 +39,18 @@ public class ForDemo {
 		 *****
 		 
 		 */
-		
+
 		for (int i = 0; i < 5; i++) {
-			for (int j = 0; j < i+1 ; j++) {
+			for (int j = 0; j < i + 1; j++) {
 				System.out.print("*");
 			}
 			System.out.println();
-		}	
-		
-		
+		}
+
 		/*
 		 ***** 
 		 ****
-	     ***
+		 ***
 		 **
 		 *
 		     *
@@ -60,50 +59,43 @@ public class ForDemo {
 		  ****
 		 ***** 
 		 
-		 */	
-		
-		for (int i = 0; i<5; i++) {
-			int m = 5 - (i+1);
-			int n = i + 1;
-			for (int j= 0; j < m ; j++) {
-				System.out.print(" ");
-				
-			}
-			for (int j = 0; j < n ; j++) {
-				System.out.print("*");
-				
-			}
-			System.out.println();
-		}
-		
-		
-		
-	
+		 */
+
 		for (int i = 0; i < 5; i++) {
-			for (int j = 0; j < 5-i; j++) {
+			int m = 5 - (i + 1);
+			int n = i + 1;
+			for (int j = 0; j < m; j++) {
+				System.out.print(" ");
+
+			}
+			for (int j = 0; j < n; j++) {
+				System.out.print("*");
+
+			}
+			System.out.println();
+		}
+
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 5 - i; j++) {
 				System.out.print("*");
 			}
 			System.out.println();
 		}
-	   
-	/*	
-		 *
-	    **
-	   ***
-	  ****
-	 ***** 
-	 ***** 
-      ****
-	   ***
-	    **
-		 *
-		  
-	 
-	 */	
-		
-		
-		
-		
-		
+
+		/*	
+			 *
+		**
+		   ***
+		  ****
+		 ***** 
+		 ***** 
+		  ****
+		   ***
+		**
+			 *
+			  
+		 
+		 */
+
 	}
 }

@@ -2,43 +2,42 @@ package java_20200515;
 
 public class CustomerDemo {
 	public static void main(String[] args) {
-		// Å¬·¡½º °´Ã¼ »ı¼º
-		// Customer => Å¸ÀÔ
-		// c1 => º¯¼ö(·¹ÆÛ·±½º)
-		// new Customer() => °´Ã¼ »ı¼º
-		// °´Ã¼°¡ »ı¼ºµÉ ¶§¸¸ ¸¸µé¾îÁö´Â º¯¼ö
-		Customer c1 = new Customer(); //Å¬·¡½º¸¦ ÀÌ¿ëÇØ¼­ °´Ã¼ »ı¼º
-		c1.name ="¼º¿µÇÑ";			  //°ª ÇÒ´ç
+		// í´ë˜ìŠ¤ ê°ì²´ ìƒì„±
+		// Customer => íƒ€ì…
+		// c1 => ë³€ìˆ˜(ë ˆí¼ëŸ°ìŠ¤)
+		// new Customer() => ê°ì²´ ìƒì„±
+		// ê°ì²´ê°€ ìƒì„±ë  ë•Œë§Œ ë§Œë“¤ì–´ì§€ëŠ” ë³€ìˆ˜
+		Customer c1 = new Customer(); // í´ë˜ìŠ¤ë¥¼ ì´ìš©í•´ì„œ ê°ì²´ ìƒì„±
+		c1.name = "ì„±ì˜í•œ"; // ê°’ í• ë‹¹
 		c1.email = "syh@hbilab.org";
 		c1.phone = "010-3024-1703";
 		c1.balance = 1_000_000;
 		c1.isReleased = false;
-		
+
 		System.out.println(c1.name);
 		System.out.println(c1.email);
 		System.out.println(c1.phone);
 		System.out.println(c1.balance);
 		System.out.println(c1.isReleased);
-		
+
 		Customer c2 = new Customer();
-		c2.name = "¼ÕÁ¤ÀÇ";
-		c2.email = "son@sofrtbank.com";
+		c2.name = "ì†ì •ì˜";
+		c2.email = "son@softbank.com";
 		c2.phone = "010-9090-8097";
 		c2.balance = 100_000_000;
 		c2.isReleased = false;
-		
+
 		System.out.println(c2.name);
 		System.out.println(c2.email);
 		System.out.println(c2.phone);
 		System.out.println(c2.balance);
 		System.out.println(c2.isReleased);
-	
-		Customer c3 = c2;        
-		c3.name="¼Õ¸¶»ç¿ä½Ã";
-		
+
+		Customer c3 = c2;
+		c3.name = "ì†ë§ˆì‚¬ìš”ì‹œ";
+
 		System.out.println(c2.name);
-		
+
 	}
-	
-	
+
 }

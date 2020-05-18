@@ -2,38 +2,35 @@ package java_20200511;
 
 public class CharacterDemo {
 	public static void main(String[] args) {
-		//1. À¯´ÏÄÚµå Ç¥Çö => '\u0000'
+		// 1. ìœ ë‹ˆì½”ë“œ í‘œí˜„ => '\u0000'
 		char c1 = '\uC131';
 		char c2 = '\uC601';
 		char c3 = '\uD55C';
 		System.out.print(c1);
 		System.out.print(c2);
 		System.out.print(c3);
-		
-		//2. ¾Æ½ºÅ°ÄÚµå Ç¥Çö
+
+		// 2. ì•„ìŠ¤í‚¤ì½”ë“œ í‘œí˜„
 		// 48 - 57 => 0-9
 		// 65 - 90 => A-Z
 		// 97 - 122 => a-z
 		char c4 = 97;
 		System.out.println(c4);
-		
-		//3. ¹®ÀÚ Ç¥Çö¹ı
-		char c5 = '¼º';
+
+		// 3. ë¬¸ì í‘œí˜„ë²•
+		char c5 = 'ì„±';
 		System.out.println(c5);
-		
-		
+
 		char c6 = '\\';
 		char c7 = '\'';
 		char c8 = '\"';
 		String s1 = "\\";
 		String s2 = "\"";
 		String s3 = "\'";
-		
-		System.out.println("aa"+'\t'+"bb");
-		System.out.println("aa"+'\n'+"bb");
-		System.out.println("aa"+'\r'+"bb");
+
+		System.out.println("aa" + '\t' + "bb");
+		System.out.println("aa" + '\n' + "bb");
+		System.out.println("aa" + '\r' + "bb");
 	}
-	
-	
-	
+
 }

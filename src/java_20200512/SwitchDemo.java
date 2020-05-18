@@ -1,30 +1,29 @@
 package java_20200512;
 
 public class SwitchDemo {
-	public static void main (String[] args) {
+	public static void main(String[] args) {
 		int month = Integer.parseInt(args[0]);
 		String season = null;
-		//month =>¼ö½Ä(char, byte, short , int , String)
-		switch(month) {
-		//case Æò°¡°ª => ¹İµå½Ã À¯ÀÏÇØ¾ß ÇÔ,
-		//case Àı¿¡ break°¡ ¾øÀ¸¸é ¾Æ·¡ÀÇ case·Î ÀÌµ¿ÇÑ´Ù.
-		case 12 : 
-		case 1 : 
-		case 2 : season="°Ü¿ï";break;
-		case 3 :  
-		case 5 : season="º½";break;
-		case 6 : 		
-		case 8 : season="¿©¸§";break;
-		case 9 : 
-		case 10 : 
-		case 11 : season="°¡À»";break;
-		//defaultÀÇ À§Ä¡´Â ¾îµğ ÀÖµç »ó°ü¾øÀ½.
-		//¸¶Áö¸· ¹®Àå¿¡ ÀÖÀ¸¸é break¹®À» »ç¿ëÇÑÁö ¾ÊÁö¸¸ ´Ù¸¥°÷¿¡ ÀÖÀ» °æ¿ì¿¡´Â
-		//break¹®À» »ç¿ëÇØ¾ß ÇÑ´Ù.(ÇÊ¼ö´Â ¾Æ´ÏÁö¸¸ ¿¹»ó ¸øÇÑ °á°ú°¡ ¹ß»ıÇÒ ¼ö ÀÖÀ½)
-		default : season="¾ø´Â °èÀı";
+		// month =>ìˆ˜ì‹(char, byte, short , int , String)
+		switch (month) {
+		// case í‰ê°€ê°’ => ë°˜ë“œì‹œ ìœ ì¼í•´ì•¼ í•¨,
+		// case ì ˆì— breakê°€ ì—†ìœ¼ë©´ ì•„ë˜ì˜ caseë¡œ ì´ë™í•œë‹¤.
+		case 12:
+		case 1:
+		case 2:season = "ê²¨ìš¸";break;
+		case 3:
+		case 5:season = "ë´„";break;
+		case 6:
+		case 8:season = "ì—¬ë¦„";break;
+		case 9:
+		case 10:
+		case 11:season = "ê°€ì„";break;
+		// defaultì˜ ìœ„ì¹˜ëŠ” ì–´ë”” ìˆë“  ìƒê´€ì—†ìŒ.
+		// ë§ˆì§€ë§‰ ë¬¸ì¥ì— ìˆìœ¼ë©´ breakë¬¸ì„ ì‚¬ìš©í•œì§€ ì•Šì§€ë§Œ ë‹¤ë¥¸ê³³ì— ìˆì„ ê²½ìš°ì—ëŠ”
+		// breakë¬¸ì„ ì‚¬ìš©í•´ì•¼ í•œë‹¤.(í•„ìˆ˜ëŠ” ì•„ë‹ˆì§€ë§Œ ì˜ˆìƒ ëª»í•œ ê²°ê³¼ê°€ ë°œìƒí•  ìˆ˜ ìˆìŒ)
+		default:season = "ì—†ëŠ” ê³„ì ˆ";
 		}
-	
-		System.out.println(month+"¿ùÀº "+season+" ÀÔ´Ï´Ù.");
+
+		System.out.println(month + "ì›”ì€ " + season + " ì…ë‹ˆë‹¤.");
 	}
-	
 }

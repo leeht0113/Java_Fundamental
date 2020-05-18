@@ -2,64 +2,51 @@ package java_20200514;
 
 public class LotteryDemo {
 	public static void main(String[] args) {
-		//·Î¶Çº¹±Ç
-		//1. 1ºÎÅÍ 45±îÁöÀÇ ¼ıÀÚ Áß ÀÓÀÇ ¼ıÀÚ 6°³¸¦ »ı¼ºÇÑ´Ù.
-		//2. 6°³ÀÇ ¼ıÀÚÁß Áßº¹µÈ ¼ıÀÚ°¡ ³ª¿À¸é ¾ÈµÈ´Ù.
-		//Math.random() => 0º¸´Ù Å©°Å³ª °°°í 1º¸´Ù ÀÛÀº ¾ç¼ö¸¦ 
-		//double °ªÀ¸·Î ¹İÈ¯ÇÑ´Ù. 0.00000 ~44.999999999
-		
-		// 1-45ÀÇ ÀÓÀÇ ·£´ı°ªÀ» ¹İÈ¯
-		
-		
+		// ë¡œë˜ë³µê¶Œ
+		// 1. 1ë¶€í„° 45ê¹Œì§€ì˜ ìˆ«ì ì¤‘ ì„ì˜ ìˆ«ì 6ê°œë¥¼ ìƒì„±í•œë‹¤.
+		// 2. 6ê°œì˜ ìˆ«ìì¤‘ ì¤‘ë³µëœ ìˆ«ìê°€ ë‚˜ì˜¤ë©´ ì•ˆëœë‹¤.
+		// Math.random() => 0ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ê³  1ë³´ë‹¤ ì‘ì€ ì–‘ìˆ˜ë¥¼
+		// double ê°’ìœ¼ë¡œ ë°˜í™˜í•œë‹¤. 0.00000 ~44.999999999
+
+		// 1-45ì˜ ì„ì˜ ëœë¤ê°’ì„ ë°˜í™˜
+
 		int[] lotto = new int[6];
-		
-		for(int i=0;i<lotto.length;i++) {
-			int random = (int)(Math.random()*45) +1;
-			
-			//Áßº¹µÇ´Â °ªÀÌ ÀÖ´ÂÁö Ã¼Å©ÇÏ´Â º¯¼ö
+
+		for (int i = 0; i < lotto.length; i++) {
+			int random = (int) (Math.random() * 45) + 1;
+
+			// ì¤‘ë³µë˜ëŠ” ê°’ì´ ìˆëŠ”ì§€ ì²´í¬í•˜ëŠ” ë³€ìˆ˜
 			boolean isExisted = false;
-			
-			//Áßº¹Ã¼Å©ÇÏ´Â ÄÚµå
-			for(int j=0;j<i;j++) {
-				if(lotto[j]==random) {
+
+			// ì¤‘ë³µì²´í¬í•˜ëŠ” ì½”ë“œ
+			for (int j = 0; j < i; j++) {
+				if (lotto[j] == random) {
 					isExisted = true;
 					break;
 				}
 			}
-			if(!isExisted) {
-				lotto[i] = random; 
-			}else {
+			if (!isExisted) {
+				lotto[i] = random;
+			} else {
 				i--;
 			}
-			
+
 		}
-		
-		//bubble sort(ascending)
-		for(int i = 0; i < lotto.length; i++) {
-	        for(int j = 0 ; j < lotto.length -(i + 1) ; j++) {
-	            if(lotto[j] > lotto[j+1]) {
-	                int temp = lotto[j+1];
-	                lotto[j+1] = lotto[j];
-	                lotto[j] = temp;
-	            }
-	        }
-	    }
-		
-		
-		for(int value : lotto) {
-			System.out.print(value +"\t");
+
+		// bubble sort(ascending)
+		for (int i = 0; i < lotto.length; i++) {
+			for (int j = 0; j < lotto.length - (i + 1); j++) {
+				if (lotto[j] > lotto[j + 1]) {
+					int temp = lotto[j + 1];
+					lotto[j + 1] = lotto[j];
+					lotto[j] = temp;
+				}
+			}
 		}
-		
-	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+		for (int value : lotto) {
+			System.out.print(value + "\t");
+		}
+
 	}
 }

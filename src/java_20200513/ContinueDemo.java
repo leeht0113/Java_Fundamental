@@ -7,7 +7,7 @@ public class ContinueDemo {
 			if(i==6) continue; 
 			sum += i;		
 		}		
-		System.out.printf("1ºÎÅÍ 10±îÁö ÇÕÀº %d ÀÔ´Ï´Ù.(´Ü 6Àº Á¦¿ÜÇÑ´Ù.) %n", sum);
+		System.out.printf("1ë¶€í„° 10ê¹Œì§€ í•©ì€ %d ì…ë‹ˆë‹¤.(ë‹¨ 6ì€ ì œì™¸í•œë‹¤.) %n", sum);
 	
 		for (int i =2; i <=9; i++) {
 			for (int j=1; j<=9 ; j++) {

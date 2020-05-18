@@ -1,100 +1,98 @@
 package java_20200512;
-//ctrl + shift + f => ÀÚµ¿À¸·Î ÁÙ ¸ÂÃçÁÖ±â
+
+//ctrl + shift + f => ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½
 public class OperatorDemo {
 	public static void main(String[] args) {
 		int a = 10, b = 22;
 		int c = 0;
 		double d = 0;
-		
+
 		c = a + b;
 		System.out.println(c);
-		
+
 		c = a - b;
 		System.out.println(c);
-		
-		d = (double)b / a;
+
+		d = (double) b / a;
 		System.out.println(d);
-		
+
 		c = a * b;
 		System.out.println(c);
-		
-		//³ª¸ÓÁö ¿¬»êÀÚ
+
+		// ë‚˜ë¨¸ì§€ ì—°ì‚°ì
 		c = b % a;
 		System.out.println(c);
-		
-		a += b;//a = a + b ;
+
+		a += b;// a = a + b ;
 		System.out.println(a);
-		
+
 		int sum = 0;
-		for(int i=1;i<=100;i++) {
-			//sum = sum + i;
+		for (int i = 1; i <= 100; i++) {
+			// sum = sum + i;
 			sum += i;
 		}
 		System.out.println(sum);
-		
+
 		a = 10;
 		b = 20;
-		
+
 		a++; // a = a+1;
 		++b; // b = b+1;
-		
-		System.out.println(a);//11
-		System.out.println(b);//21
-		
-		//´ëÀÔ ÈÄ Áõ°¡
+
+		System.out.println(a);// 11
+		System.out.println(b);// 21
+
+		// ëŒ€ì… í›„ ì¦ê°€
 		c = a++; // c =>11
 		System.out.println(c);
-		
-		//Áõ°¡ ÈÄ ´ëÀÔ
+
+		// ì¦ê°€ í›„ ëŒ€ì…
 		c = ++b; // c => 22
 		System.out.println(c);
-		
+
 		a = 10;
 		b = 20;
-		
+
 		boolean isSuccess = false;
 		isSuccess = a > b;
 		System.out.println(isSuccess);
-		
+
 		isSuccess = a < b;
 		System.out.println(isSuccess);
-		
+
 		isSuccess = a >= b;
 		System.out.println(isSuccess);
-		
+
 		isSuccess = a <= b;
 		System.out.println(isSuccess);
-		//primitivedatatype == ¿¬»êÀÚ´Â ÀÚ·áÇü¿¡ »ó°ü¾øÀÌ °ª¸¸ °°À¸¸é
-		//true¸¦ ¹İÈ¯ÇÑ´Ù.
+		// primitivedatatype == ì—°ì‚°ìëŠ” ìë£Œí˜•ì— ìƒê´€ì—†ì´ ê°’ë§Œ ê°™ìœ¼ë©´
+		// trueë¥¼ ë°˜í™˜í•œë‹¤.
 		isSuccess = a == d;
 		System.out.println(isSuccess);
-		
+
 		isSuccess = a != b;
 		System.out.println(isSuccess);
-		
-		System.out.println( 4 & 5);
-		System.out.println( 4 | 5);
-		System.out.println( 4 ^ 5);
-		
+
+		System.out.println(4 & 5);
+		System.out.println(4 | 5);
+		System.out.println(4 ^ 5);
+
 		a = 10;
 		b = 20;
-		
-		//a && b => a°¡ falseÀÌ¸é b¸¦ ¿¬»êÇÏÁö ¾ÊÀ½(short circuit)
-		//a || b => a°¡ trueÀÌ¸é b¸¦ ¿¬»êÇÏÁö ¾ÊÀ½(short circuit)
-		
-		isSuccess = (a==b) && (++a==b++);
+
+		// a && b => aê°€ falseì´ë©´ bë¥¼ ì—°ì‚°í•˜ì§€ ì•ŠìŒ(short circuit)
+		// a || b => aê°€ trueì´ë©´ bë¥¼ ì—°ì‚°í•˜ì§€ ì•ŠìŒ(short circuit)
+
+		isSuccess = (a == b) && (++a == b++);
 		System.out.println(isSuccess);
 		System.out.println(a);
 		System.out.println(b);
-		
-		
-		// + =>¿¬°á¿¬»êÀÚ (µÎ°³Áß 1°³ ÀÌ»óÀÌ ¹®ÀÚ¿­ÀÏ °æ¿ì)
-		//, »ê¼ú¿¬»êÀÚ (µÎ°³ ¸ğµÎ ¼ıÀÚÀÏ°æ)
-		
-		
-		System.out.println(1+2+3+"456");
-		System.out.println("123"+4+(5+6));
-		
-		
+
+		// + =>ì—°ê²°ì—°ì‚°ì (ë‘ê°œì¤‘ 1ê°œ ì´ìƒì´ ë¬¸ìì—´ì¼ ê²½ìš°)
+		// , ì‚°ìˆ ì—°ì‚°ì (ë‘ê°œ ëª¨ë‘ ìˆ«ìì¼ê²½)
+
+		System.out.println(1 + 2 + 3 + "456");
+		System.out.println("123" + 4 + (5 + 6));
+
 	}
 }

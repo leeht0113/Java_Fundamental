@@ -3,25 +3,25 @@ package java_20200513;
 public class WhileDemo {
 	public static void main(String[] args) {
 		int sum = 0;
-		int i=1;
-		while(i<=10) {
+		int i = 1;
+		while (i <= 10) {
 			sum += i;
 			i++;
-			
+
 		}
-		System.out.printf("1ºÎÅÍ 10±îÁö ÇÕÀº %d ÀÔ´Ï´Ù.%n",sum);
-		
-		//±¸±¸´ÜÀ» while¹®À¸·Î ÀÛ¼ºÇÏ¼¼¿ä.
-		
-		i=2;
-		while(i<=9) {
-			int j=1;
-			while(j <= 9) {
-		        System.out.printf("%d * %d = %d%n",i,j,i*j);
+		System.out.printf("1ë¶€í„° 10ê¹Œì§€ í•©ì€ %d ìž…ë‹ˆë‹¤.%n", sum);
+
+		// êµ¬êµ¬ë‹¨ì„ whileë¬¸ìœ¼ë¡œ ìž‘ì„±í•˜ì„¸ìš”.
+
+		i = 2;
+		while (i <= 9) {
+			int j = 1;
+			while (j <= 9) {
+				System.out.printf("%d * %d = %d%n", i, j, i * j);
 				j++;
 			}
-			i++;	
+			i++;
 		}
-			
+
 	}
 }

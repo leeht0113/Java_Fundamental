@@ -5,11 +5,11 @@ public class ArrayCopyDemo {
 		String[] fruits = {"apple","banana","watermelon","blueberry"};
 		
 		String[] temp = new String[6];
-		//fruits => ¿øº»¹è¿­
-		// 0 => ¿øº»¹è¿­ÀÇ À§Ä¡
-		// temp => º¹»çÇÒ ¹è¿­
-		// 2 => º¹»çÇÒ ¹è¿­ÀÇ À§Ä¡
-		// 4 => ¿øº»¹è¿­ÀÇ 4°³ ¿ä¼Ò¸¦ º¹»ç
+		//fruits => ì›ë³¸ë°°ì—´
+		// 0 => ì›ë³¸ë°°ì—´ì˜ ìœ„ì¹˜
+		// temp => ë³µì‚¬í•  ë°°ì—´
+		// 2 => ë³µì‚¬í•  ë°°ì—´ì˜ ìœ„ì¹˜
+		// 4 => ì›ë³¸ë°°ì—´ì˜ 4ê°œ ìš”ì†Œë¥¼ ë³µì‚¬
 		System.arraycopy(fruits, 0, temp, 2, 4);
 			
 		temp[0] = "peach";

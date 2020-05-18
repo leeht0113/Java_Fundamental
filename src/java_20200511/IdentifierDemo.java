@@ -4,24 +4,24 @@ public class IdentifierDemo {
 	public static void main(String[] args) {
 		int age = 10;
 		String name = "hello";
-		
-		//Ã¹±ÛÀÚ´Â ¼ıÀÚ¸¦ »ç¿ëÇÒ¼ö ¾øÀ½.
-		//String 1father = "John";
-			
-		//°ø¹éÀ» »ç¿ëÇÒ ¼ö ¾øÀ½.
-		//String mother Name = "Michell";
-		
-		//¿¹¾à¾î´Â »ç¿ëÇÒ ¼ö ¾øÀ½.
-		//String void = "empty";
-		
-		//Æ¯¼ö¹®ÀÚ¸¦ »ç¿ëÇÒ ¼ö ¾øÀ½(´Ü, $,_´Â ¿¹¿Ü)
-		//int @money = 1000;
-		
-		//ÀÚ¹Ù¿¡¼­ ¹®ÀÚ´Â À¯´ÏÄÚµå¸¦ Áö¿øÇÏ±â ¶§¹®¿¡ ¼¼°è ¸ğµç ¹®ÀÚ¸¦ »ç¿ëÇÒ ¼ö ÀÖÀ½.
-		String ÀÌ¸§ = "¼º¿µÇÑ";
-		System.out.println(ÀÌ¸§);
-		
-		short age = 127;
+
+		// ì²«ê¸€ìëŠ” ìˆ«ìë¥¼ ì‚¬ìš©í• ìˆ˜ ì—†ìŒ.
+		// String 1father = "John";
+
+		// ê³µë°±ì„ ì‚¬ìš©í•  ìˆ˜ ì—†ìŒ.
+		// String mother Name = "Michell";
+
+		// ì˜ˆì•½ì–´ëŠ” ì‚¬ìš©í•  ìˆ˜ ì—†ìŒ.
+		// String void = "empty";
+
+		// íŠ¹ìˆ˜ë¬¸ìë¥¼ ì‚¬ìš©í•  ìˆ˜ ì—†ìŒ(ë‹¨, $,_ëŠ” ì˜ˆì™¸)
+		// int @money = 1000;
+
+		// ìë°”ì—ì„œ ë¬¸ìëŠ” ìœ ë‹ˆì½”ë“œë¥¼ ì§€ì›í•˜ê¸° ë•Œë¬¸ì— ì„¸ê³„ ëª¨ë“  ë¬¸ìë¥¼ ì‚¬ìš©í•  ìˆ˜ ìˆìŒ.
+		String ì´ë¦„ = "ì„±ì˜í•œ";
+		System.out.println(ì´ë¦„);
+
+		age = 127;
 		float weight = 70.45f;
 	}
 }
