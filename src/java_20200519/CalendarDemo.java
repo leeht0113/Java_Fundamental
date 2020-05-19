@@ -1,10 +1,8 @@
-package java_20200518;
+package java_20200519;
 
 public class CalendarDemo {
 	public static void main(String[] args) {
 		Calendar c = new Calendar();
-		c.set(2020, 5, 25);
-		c.setYear(2025);
-		c.print();
+		c.print(2019,5,12);
 	}
 }

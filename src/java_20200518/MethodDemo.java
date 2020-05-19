@@ -1,7 +1,7 @@
 package java_20200518;
 
 public class MethodDemo {
-	//8-116인까지 메서드를 정의
+	//8-16인까지 메서드를 정의
 	//boolean 메서드의 반환값
 	//instance 메서드
 	//int year => 매개변수(parameter)
@@ -61,6 +61,8 @@ public class MethodDemo {
 		for(int value :result3) {
 			System.out.println(value +"\t");
 		}
+		
+		
 		
 		
 	}
