@@ -1,4 +1,4 @@
-package study_20200519;
+package study;
 
 public class Java1 {
 
