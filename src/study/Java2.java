@@ -42,7 +42,9 @@ public class Java2 {
 		int sum = 0;
 		
 		for(int i=1;i<=10;i++) {
-			sum = sum + i;
+			if(i%2==0) {
+				sum = sum + i;
+			}
 		}
 		System.out.printf("1부터 10까지 합은 %d 입니다.%n", sum);
 		/*
@@ -58,6 +60,46 @@ public class Java2 {
 		 * i = 10, sum = 55 
 		 * i = 11
 		 */
+		
+		for(int i=2;i<=9;i++) {
+			for(int j=1;j<=9;j++) {
+				System.out.printf("%d * %d = %d%n", i, j, i*j);
+			}                                      
+		}
+		
+		/*
+		 * i=2 , j = 1 => 2 * 1 = 2
+		 *     , j = 2 => 2 * 2 = 4
+		 *     , j = 3 => 2 * 3 = 6
+		 *     , ...
+		 *     , j = 9 => 2 * 9 = 18
+		 * i=3 , j = 1 => 3 * 1 = 3
+		 * 
+		 *     
+		 * i=4, ... 
+		 * ...    
+		 * i=9
+		 * 
+		 *     
+		 */
+		int i = 1;
+		sum = 0;
+		while(i<=10) {
+			sum = sum +i;
+			i++;
+		}
+		
+		System.out.printf("1부터 10까지 합은 %d 입니다.%n", sum);
+		
+		i = 2;
+		while(i<=9) {
+			int j = 1; // j가 9로 끝나면 1로 다시 초기화됨
+			while(j<=9) {
+				System.out.printf("%d * %d = %d%n", i, j,i*j);
+				j++;
+			}
+			i++;
+		}
 		
 		
 		
