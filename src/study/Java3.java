@@ -1,7 +1,5 @@
 package study;
 
-import java.util.Iterator;
-
 public class Java3 {
 	public static void main(String[] args) {
 		//1. 배열 선언과 생성
