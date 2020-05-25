@@ -70,7 +70,7 @@ public class Java4 {
 	
 	public static void main(String[] args) {
 		Java4 j = new Java4();
-		ArrayList<Customer> list = j.list();
+		ArrayList<Customer> list = new Java4().list(); //ArrayList는 메인에서 주로 호출
 		
 		for(Customer cust : list) {
 			System.out.println(cust.name);
