@@ -18,7 +18,6 @@ public class ListDemo {
 		}
 	
 		//list 모두 삭제 => remove(int index)
-		
 		for(int i =0;i<list.size();) {
 			list.remove(0);
 		}
