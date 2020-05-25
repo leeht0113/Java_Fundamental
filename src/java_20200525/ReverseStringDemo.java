@@ -2,8 +2,10 @@ package java_20200525;
 
 public class ReverseStringDemo {
 
-	public ReverseStringDemo() {
-		// TODO Auto-generated constructor stub
+	public static void main(String[] args) {
+		
+		String str = "HelloWorld";
+		
 	}
 
 }
