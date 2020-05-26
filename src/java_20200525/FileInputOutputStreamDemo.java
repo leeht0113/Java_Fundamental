@@ -13,8 +13,8 @@ public class FileInputOutputStreamDemo {
 	
 		try {
 			fis = new FileInputStream(
-				"c:\\dev\\jdk-11.0.7_windows-x64_bin.exe");
-			fos = new FileOutputStream("c:\\dev\\jdk.exe");
+				"c:\\dev\\jdk-11.0.7_windows-x64_bin.exe");//읽을 대상
+			fos = new FileOutputStream("c:\\dev\\jdk.exe");//출력 대상
 			
 			int readByte = 0;
 			//fis.read() : 한바이트 읽어 반환한다. 더이상 읽을 바이트가 없으면

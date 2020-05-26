@@ -3,8 +3,8 @@ package study;
 import java.util.ArrayList;
 
 public class Java4 {
-	private String name;
-	private double height;
+	String name;
+	double height;
 	
 	//encapsulation
 	//name에 대한 setter
