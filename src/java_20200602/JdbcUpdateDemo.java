@@ -20,7 +20,7 @@ public class JdbcUpdateDemo {
 			PreparedStatement pstmt = null;
 			
 			try {
-				//2. 데이터 베이스 연결 => Connection 객체를 생성한다.
+			//2. 데이터 베이스 연결 => Connection 객체를 생성한다.
 			//localhost : 데이터 베이스 설치 ip
 			//3306 : 데이터 베이스 포트
 			//kpc : 데이터베이스명 
