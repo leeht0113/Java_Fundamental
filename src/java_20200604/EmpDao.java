@@ -1,6 +1,7 @@
 package java_20200604;
 
 import java.sql.Connection;
+
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -12,17 +13,16 @@ public class EmpDao {
 	// 1) 생성자의 접근한정자를 private 으로 설정한다.
 	// 2) 해당 클래스의 객체를 생성할 수 있는 변수를 static으로 선언한다.
 	// 3) 해당 클래스의 객체를 생성할 수 있는 메서드를 static으로 만든다.
-	// 
 	
 	private static EmpDao dao;
-	
+
 	public static EmpDao getInstance() {
-		if(dao == null) {
-		   dao = new EmpDao();
+		if (dao == null) {
+			dao = new EmpDao();
 		}
 		return dao;
 	}
-	
+
 	private EmpDao() {
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");
@@ -62,19 +62,8 @@ public class EmpDao {
 			e1.printStackTrace();
 		} finally {
 			close(con, pstmt, null);
-			
 		}
 		return resultCount;
-	}
-
-	private void close(Connection con, PreparedStatement pstmt) {
-		try {
-			if(pstmt != null) pstmt.close();
-			if(con != null) con.close();
-		} catch (SQLException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
 	}
 	
 	public int update(EmpDto e) {
@@ -106,7 +95,7 @@ public class EmpDao {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		} finally {
-			close(con, pstmt);
+			close(con, pstmt, null);
 			
 		}
 		return resultCount;
@@ -133,7 +122,13 @@ public class EmpDao {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		} finally {
-			close(con, pstmt,  null);
+			try {
+				if(pstmt != null) pstmt.close();
+				if(con != null) con.close();
+			} catch (SQLException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 			
 		}
 		return resultCount;
@@ -186,7 +181,7 @@ public class EmpDao {
 		}
 		return list;
 	}
-	
+
 	private void close(Connection con, PreparedStatement pstmt, ResultSet rs) {
 		try {
 			if(rs != null) rs.close();
@@ -197,49 +192,45 @@ public class EmpDao {
 			e1.printStackTrace();
 		}
 	}
+
 	public EmpDto select(int no) {
-		EmpDto empDto = null;
+		EmpDto dto = null;
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		
 		try {
-			con = DriverManager.getConnection(
-				"jdbc:mysql://localhost/kpc","kpc12","kpc1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost/kpc", "kpc12", "kpc1234");
 			StringBuffer sql = new StringBuffer();
-			sql.append("SELECT empno, ename, job, mgr,date_format(hiredate,'%Y.%m.%d'), ");
-			sql.append("sal, comm, deptno ");
-			sql.append("FROM emp ");
-			sql.append("WHERE empno = ? ");
-			
+			sql.append("");
+			sql.append("");
+			sql.append("");
+			sql.append("");
+
 			pstmt = con.prepareStatement(sql.toString());
-			
+
 			int index = 0;
-		
-			pstmt.setInt(++index, no);
-			
+
+			pstmt.setInt(++index, 0);
+			pstmt.setString(++index, "");
+
 			rs = pstmt.executeQuery();
-			if(rs.next()) {
+			if (rs.next()) {
 				index = 0;
-				int _no = rs.getInt(++index);
-				String name = rs.getString(++index);
-				String job = rs.getString(++index);
-				int mgr = rs.getInt(++index);
-				String hireDate = rs.getString(++index);
-				int sal = rs.getInt(++index);
-				int comm = rs.getInt(++index);
-				int deptNo = rs.getInt(++index);
-				empDto = new EmpDto(_no,name,job,mgr,hireDate,sal,comm,deptNo);
+				int x1 = rs.getInt(++index);
+				String x2 = rs.getString(++index);
+
+				dto = new EmpDto();
 			}
-			
+
 		} catch (SQLException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		} finally {
 			close(con, pstmt, rs);
-			
+
 		}
-		return empDto;
+		return dto;
 	}
 
 	
